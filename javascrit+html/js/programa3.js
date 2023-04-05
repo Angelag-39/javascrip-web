@@ -15,15 +15,17 @@ function limpaTela(){
     pincel.clearRect(0,0,600,400);
 }
 
-var x=20;
 
-function atualizaTela(params) {
+function exibeMensagemNoConsole (){
+    console.log('Chamei função');
+}
+var x=20;
+function atualizaTela (){
     limpaTela();
     desenhaCirculo(x,20,10);
     x++;
 }
-setInterval(atualizaTela,10);
-
+setInterval(atualizaTela,20);
     
 
 
